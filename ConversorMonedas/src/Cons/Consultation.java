@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 public class Consultation {
 
     public Currency searchCurrency(String baseCurrency, String targetCurrency) {
-        URI url = URI.create("https://v6.exchangerate-api.com/v6/3e56b2a336d50ce3ba16441a/pair/" + baseCurrency + "/" + targetCurrency);
+        URI url = URI.create("https://v6.exchangerate-api.com/v6/YOUR_API_KEY/pair/" + baseCurrency + "/" + targetCurrency);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
